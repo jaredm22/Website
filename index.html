@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to my website!</title>
+    <script src="https://kit.fontawesome.com/a14aa2b90e.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  	<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+	<link href="../css/animate.css" rel="stylesheet"/>
+	<link href="../css/waypoints.css" rel="stylesheet"/>
+	<script src="../js/jquery.waypoints.min.js" type="text/javascript"></script>
+    <script src="../js/waypoints.js" type="text/javascript"></script>
+    
+    <script>
+        var input = document.getElementById("login");
+
+        input.addEventListener(keyup, function(event){
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById("btn").click();
+            }
+        })
+    </script>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        <div class="box">
+            <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay="0s">
+                <img height=100 src="./dir/Headshot.jpg">
+            </section>
+    
+            <section class="os-animation" data-os-animation="fadeInUp " data-os-animation-delay=".3s">
+                <h1>Jared Min</h1>
+            </section>
+        
+            <section class="os-animation" data-os-animation="fadeInUp" data-os-animation-delay=".6s">
+                <form action="../aboutpage/index.html">
+                    <input id="login" type="text" placeholder="Enter password">
+                    <a href="../aboutpage/index.html"><i class="fas fa-arrow-circle-right"></i></a>
+                </form>
+            </section>
+        </div>    
+    </div>
+
+</body>
+</html>

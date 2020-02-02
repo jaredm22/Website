@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background: url(../dir/lava.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    font-family: 'Lucida Grande', sans-serif;
+}
+
+
+.container {
+    background: inherit;
+    position: absolute;
+    top: 5%;
+    left: 22%;
+    height: 500px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 38% 62%;
+    grid-template-rows: 11% 89%;
+    grid-template-areas: 
+    "nav header"
+    "conversations messages" ;
+    border-radius: 5px;
+    border: 1px solid rgb(rgb(47, 51, 54));
+
+}
+
+.nav {
+    grid-area: nav;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(47, 51, 54);
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid rgb(47, 51, 54);
+}
+
+.nav button {
+    position: absolute;
+    right: 10%;
+    top: 49%;
+    height: 20px;
+    width: 22px;
+    border-radius: 5px;
+}
+
+.nav i {
+    position: absolute;
+    right: 12%;
+    top: 12%;
+    color: rgb(100, 100, 100);
+}
+
+.nav i:hover {
+    color: rgb(12, 90, 179);
+}
+
+.exit {
+    top: 8%;
+    left:2%;
+    border-radius: 50%;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: rgb(252, 98, 93);
+}
+
+
+
+.minimize {
+    top: 8%;
+    left:9%;
+    border-radius: 50%;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: rgb(254, 192, 65);
+}
+
+.expand {
+    top: 8%;
+    left:16.5%;
+    border-radius: 50%;
+    position: absolute;
+    height: 12px;
+    width: 12px;
+    background: rgb(56, 206, 75);
+}
+
+
+
+.email {
+    color: rgb(148, 149, 151);
+    background: rgb(47, 51, 54);
+    border: 1px solid rgb(148, 149, 151);
+    border-radius: 3px;
+    height: 32%;
+    width: 72%;
+    position: absolute;
+    bottom: 15%;
+    left: 8%;
+}
+
+
+.enter {
+    position: absolute;
+    height: 32%;
+    right: 5%;
+    bottom: 15%;
+}
+
+.header {
+    grid-area: header;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(47, 51, 54);
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid rgb(82, 85, 90);
+    border-left: 1px solid rgb(82, 85, 90);
+}
+
+.header p {
+    position: absolute;
+    left: 3.3%;
+    bottom:20%;
+    float: left;
+    font-size: 12px;
+    color: white;
+}
+
+.header a {
+    float: right;
+    position: absolute;
+    bottom: 20%;
+    right: 3.3%;
+    color: rgb(69, 154, 251);
+    font-size: 12px;
+}
+
+.conversations {
+    grid-area: conversations;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background:rgb(48, 51, 54);
+    border-bottom-left-radius: 5px;
+    border-top: 1px solid rgb(82, 85, 90);
+}
+
+.messages {
+    grid-area: messages;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgb(36, 40, 42);
+    border-bottom-right-radius: 5px;  
+}
+
+.msgscroll {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    height: 92%;
+}
+
+
+
+.albumlink1 {
+    position: absolute;
+    height: 33%;
+    width: 65%;
+    top: 107%;
+    left: 33%;
+    background: none;
+    z-index: 1;
+}
+
+
+.messages img {
+    position: relative;
+    top: 8%;
+    width: 65%;
+    left: 34%;   
+}
+
+.messages .time {
+    position: absolute;
+    z-index:1;
+    top: 2%;
+    left: 37%;
+    width: 25%;
+}
+
+.messages .over {
+    position: relative;
+    width: 350px;
+    top: 7%;
+    left: 19%;
+    bottom: 5%;
+}
+
+.messages .about1 {
+    position: relative;
+    width:300px;
+    top: 7%;
+    left: 30%;
+}
+
+.messages .about2 {
+    position: relative;
+    width: 275px;
+    left:2%;
+    top: 5%;
+}
+
+.messages .about3 {
+    position: relative;
+    width: 300px;
+    left: 30%;
+    top: 5%;
+}
+
+.textbox {
+    position: relative;
+    width: 100%;
+    top: 92%;
+    background: rgb(41, 41, 41);
+    border-top: 1px solid rgb(82, 85, 90);
+    border-bottom-right-radius: 5px;;
+    height: 8%;
+
+}
+
+.textinput {
+    border: 1px solid rgb(82, 85, 90);
+    border-radius:15px;
+    position: absolute;
+    left: 2%;
+    top: 17%;
+    width: 90%;
+    height: 55%;
+    background: rgb(60, 60, 60);
+    color: rgb(199, 199, 199);
+}
+
+.textinput::placeholder {
+    color: rgb(199, 199, 199);
+}
+
+.textinput:focus {
+    color: black;
+}
+
+.textbox i {
+    color: rgb(69, 154, 251);
+    position: absolute;
+    right: 2%;
+    top: 25%;
+}
+
+.textbox i:hover {
+    color: rgb(12, 90, 179);
+}
+
+
+.box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    overflow-y: scroll;
+}
+
+.convo {
+    vertical-align: middle;
+    position: absolute;
+    height: 14%;
+    width: 100%;
+    border-bottom: 1px solid rgb(213 215, 216);
+}
+
+
+.convo a {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    z-index: 1;
+}
+
+.convo img{
+    position: absolute;
+    border-radius: 50%;
+    float: left;
+    top: 12%;
+    left: 15px;
+}
+
+.convo h6 {
+    position: absolute;
+    float: left;
+    top: 12%;
+    left: 23%;
+    font-size: 13px;
+    font-weight:600;
+    color: white;
+}
+
+.convo p {
+    position: absolute;
+    float: left;
+    top: 40%;
+    left: 23%;
+    font-size: 11px;
+    color: white;
+}
+
+.convo .icon1 {
+    position: absolute;
+    top: 12%;
+    left: 15px;
+    float: left;
+    background: url(../homepage/dir/Headshot.jpg);
+    background-size: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+.convo .icon2 {
+    position: absolute;
+    top: 12%;
+    left: 15px;
+    float: left;
+    background: honeydew;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.convo .icon2 i {
+    position: absolute;
+    top: 30%;
+    left:33%
+}
+
+.convo .icon3 {
+    position: absolute;
+    top: 12%;
+    left: 15px;
+    float: left;
+    background: #66bbdd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.convo .icon3 i {
+    position: absolute;
+    top: 30%;
+    left:32%
+}
+
+.convo .icon4 {
+    position: absolute;
+    top: 12%;
+    left: 15px;
+    float: left;
+    background: #6bd6bd;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.convo .icon4 i {
+    position: absolute;
+    top: 30%;
+    left:28%;
+}
+
+.convo .icon5 {
+    position: absolute;
+    top: 12%;
+    left: 15px;
+    float: left;
+    background: slateblue;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.convo .icon5 i {
+    position: absolute;
+    top: 30%;
+    left:26%;
+}
+
+.convo .icon6 {
+    position: absolute;
+    top: 12%;
+    left: 15px;
+    float: left;
+    background: #243665;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.convo .icon6 i {
+    position: absolute;
+    top: 30%;
+    left:29%;
+}
+
+
+.convo .icon7 {
+    position: absolute;
+    top: 12%;
+    left: 15px;
+    float: left;
+    background: springgreen;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.convo .icon7 i {
+    position: absolute;
+    top: 30%;
+    left:29%;
+}
+
+.convo .divider {
+    border-bottom: 1px solid rgba(82, 85, 90, 0.979);
+    position: absolute;
+    left: 10%;
+    width: 90%;
+    height: 100%;
+}
+
+.convo .time p{
+    float: right;
+}
+
+.convo .content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.convo.convo1 button{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    z-index:1;
+}
+
+.convo.convo2 button{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: none;
+    z-index:1;
+}
+
+.convo.convo1 {
+    background: rgb(69, 154, 251);
+}
+
+.convo.convo2 {
+    top: 15%;
+}
+
+.convo.convo3 {
+    top:30%;
+}
+
+.convo.convo4 {
+    top:45%;
+}
+
+.convo.convo5 {
+    top:60%;
+}
+
+.convo.convo6 {
+    top:75%;
+}
+
+.convo.convo7 {
+    top:90%;
+}
+
+#welcome {
+    display: block;
+}
+
+#interests {
+    display: none;
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+     <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://kit.fontawesome.com/a14aa2b90e.js" crossorigin="anonymous"></script>
+        <title>iMessage</title>
+        <script>
+        function toggle(c_clicked, c_other, m_clicked, m_other){
+            var cc = document.getElementById(c_clicked);
+            var co = document.getElementById(c_other);
+            var mc = document.getElementById(m_clicked);
+            var mo = document.getElementById(m_other);
+
+            if (co.style.background = "#3994FC") {
+                mc.style.display = "block";
+                cc.style.background = "#3994FC";
+                mo.style.display = "none";
+                co.style.background = "#2F3336";
+            } 
+        }
+        </script>
+    </head>
+
+    <body>
+        <div class="container" id="screen"> 
+
+            <div class="nav">
+                <input class="email" type="text" placeholder="   Message Me">
+                <button><i class="fas fa-edit"></i></button>
+                <div class="exit"></div>
+                <div class="minimize"></div>
+                <div class="expand"></div>
+            </div>
+
+            <div class="header">
+                <p>To: Visitor</p>
+                <a>Details</a>
+            </div>
+
+            <div class="conversations">
+                <ul class="box">
+                    <div class="convo convo1" id="cw">
+                        <button class="toggle" onclick="toggle('cw', 'ci', 'welcome', 'interests')"></button>
+                        <div class="icon1"></div>
+                        <h6>Jared Min</h6>
+                        <p>Welcome to my website!</p>
+                        <div class="divider"></div>
+                    </div>
+    
+                    <div class="convo convo2" id = "ci">
+                        <button class="toggle" onclick="toggle('ci', 'cw', 'interests', 'welcome')"></button>
+                        <div class="icon2"><i class="fas fa-baseball-ball"></i></div>
+                        <h6>Interests</h6>
+                        <p>Learn more about me!</p>
+                        <div class="divider"></div>
+                    </div>
+    
+                    <div class="convo convo3">
+                        <div class="content">
+                            <a href="../projectspage/index.html"></a>
+                            <div class="icon3"><i class="far fa-folder-open"></i></div>
+                            <h6>Projects</h6>
+                            <p>Some of my projects.</p>
+                        </div>
+                        <div class="divider"></div>
+                    </div>
+                
+                    <div class="convo convo4">
+                        <a href="../resumepage/index.html"></a>
+                        <div class="icon4"><i class="far fa-address-card"></i></div>
+                        <h6>Resume</h6>
+                        <p>My resume!</p>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="convo convo5">
+                        <a href="../gamepage/index.html"></a>
+                        <div class="icon5"><i class="fas fa-gamepad"></i></div>
+                        <h6>Games</h6>
+                        <p>Play some simple games I coded!</p>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="convo convo6">
+                        <a href="#"></a>
+                        <div class="icon6"><i class="far fa-keyboard"></i></div>
+                        <h6>Blog</h6>
+                        <p>My blog! Still a work in progress.</p>
+                        <div class="divider"></div>
+                    </div>
+
+                    <div class="convo convo7">
+                            <div class="icon7"><i class="fas fa-phone"></i></div>
+                        <h6>Contact Me!</h6>
+                        <p>jkymin2@gmail.com | 610-425-7047</p>
+                        
+                    </div>
+                </ul>
+                
+            </div>
+
+            <div class="messages" id="welcome">
+                <div class="msgscroll">
+                    <img class="time" src="../dir/time.png">
+                    <img class src="../dir/intro.png">
+                    <img class= "over" src="../dir/intro-curry.png">
+                </div>
+            
+                <div class="textbox">
+                    <input class="textinput" placeholder="   iMessage">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </div>
+            </div>
+
+            <div class="messages" id="interests">
+                    <div class="msgscroll">
+                        <img class="time" src="../dir/time.png">
+                        <img class="about1" src="../dir/about1.png">
+                        <a class="albumlink1" href="../albumpage/index.html"></a>
+                        <img class= "about2" src="../dir/about2.png">
+                        <img class= "about3" src="../dir/about3.png">
+                    </div>
+
+                    <div class="textbox">
+                        <input class="textinput" placeholder="   iMessage">
+                        <i class="fas fa-arrow-circle-up"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+</html>

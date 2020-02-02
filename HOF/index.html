@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script src="hof.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="instruction">
+            <h3 class="it">Download this file and input into the input button.</h3>
+            <a class="dlbt" href="HOF.csv"download>Download</a>
+            <input class="ipbt" type="file" id="csvFileInput" onchange="handleFiles(this.files)" accept=".csv">
+        </div>
+           
+        <div class="container">
+            <div class="header">
+                <h3>Who between these two hall of famers has <var class="stattext" id="s">stat</var>?</h3>
+            </div>
+
+            <div class="players">
+                <button class ="player one" id="p1" >Player 1</button> 
+                
+                <button class ="player two" id="p2" >Player 2</button>
+            </div>
+        </div>
+        
+
+    </body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background: black;
+
+}
+
+.header { grid-area: h; }
+.album1 { grid-area: a1; }
+.album2 { grid-area: a2; }
+.album3 { grid-area: a3; }
+.album4 { grid-area: a4; }
+.album5 { grid-area: a5; }
+.album6 { grid-area: a6; }
+.album7 { grid-area: a7; }
+.album8 { grid-area: a8; }
+.album9 { grid-area: a9; }
+.album10 { grid-area: a10; }
+.list { grid-area: l; }
+.spotify { grid-area: sp; }
+.footer { grid-area: f; }
+
+.grid-container {
+    position: absolute;
+    top: 6%;
+    left: 15%;
+    display: grid;
+    grid-template-columns: 175px 175px 175px 175px 175px;
+    grid-template-rows: 175px 175px 175px;
+    grid-template-areas:
+    'h h h a1 a2'
+    'a3 a4 a5 a6 a7'
+    'a8 a9 a10 l sp';
+}
+
+.header {
+    position: absolute;
+    width: 525px;
+    height: 175px;
+}
+
+.header h3{
+    position: absolute;
+    left: 27%;
+    top: 40%;
+    color: #3bba9c;
+    font-family: 'Yantramanav', sans-serif;
+}
+
+.header img {
+    position: absolute;
+    height: 75px;
+    border-radius: 50%;
+    top: 25%;
+    left: 8%;
+}
+
+.wrapper {
+    /*Hides pop-up when there is no "active" class*/
+    position: absolute;
+    width: 50%;
+    height: 75%;
+    top: 10%;
+    left: 25%;
+    display: none;
+}
+
+.box {
+    position: absolute;
+    background:#8bd8bd;
+    border: 1px;
+    width: 80%;
+    height: 90%;
+    top: 5%;
+    left: 10%;
+    display: grid;
+    color: #243665;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: 200;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 35% 65%;
+    grid-template-areas: 
+    "cover title"
+    "songlist fav";
+}
+
+.cover {
+    position: absolute;
+    grid-area: cover;
+    margin-top: 30px;
+    margin-left: 50px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.title {
+    grid-area: title;
+    text-align: center;
+}
+
+.songlist {
+    grid-area: songlist;
+    text-align: center;
+}
+
+.fav {
+    grid-area: fav;
+    text-align: center;
+}
+
+.open1 {
+    width: 175px;
+    height: 175px;
+    background: url("dir/blond.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open2 {
+    width: 175px;
+    height: 175px;
+    background: url("dir/parachutes.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open3 {
+    width: 175px;
+    height: 175px;
+    background: url("dir/X.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open4 {
+    width: 175px;
+    height: 175px;
+    background: url("dir//foresthills.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open5 {
+    width: 175px;
+    height: 175px;
+    background: url("dir//freudian.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open6 {
+    width: 175px;
+    height: 175px;
+    background: url("dir//KOD.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open7 {
+    width: 175px;
+    height: 175px;
+    background: url("dir//moon.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open8 {
+    width: 175px;
+    height: 175px;
+    background: url("dir//twistedfantasy.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open9 {
+    width: 175px;
+    height: 175px;
+    background: url("dir//revenge.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.open10 {
+    width: 175px;
+    height: 175px;
+    background: url("dir//wakingup.jpg");
+    background-size: 175px;
+    border: none;
+}
+
+.list {
+    width: 175px;
+    height: 175px;
+    background: black;
+    overflow: scroll;
+}
+
+.list ul {
+    position: relative;
+    list-style-type: none;
+    left: 5%;
+    top: 2%;
+}
+
+.list li {
+    font-size: 12px;
+    color:#3bba9c;
+    font-style: italic;
+}
+
+.list .ul span {
+    font-style: none;
+}

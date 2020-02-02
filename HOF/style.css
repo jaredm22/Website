@@ -1,0 +1,105 @@
+
+body, html{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background-image: url("fenway.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instruction {
+    top: 2%;
+    left: 35%;
+    position: absolute;
+    display: grid;
+    margin: auto;
+    height: 20%;
+    width: 40%;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "it"
+    "dl"
+    "ip";
+}
+
+.it {position: absolute;grid-area: it;}
+
+
+.dlbt{
+    position: absolute;
+    grid-area: dl;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 5px;
+    color: white;
+}
+
+.ipbt {
+    position: absolute;
+    grid-area: ip;
+}
+
+.container {
+    position: absolute;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(15px);
+    top: 20%;
+    left: 20%;
+    height: 60%;
+    width: 60%;
+    text-align: center;
+    background: none;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "head"
+    "players";
+}
+
+.header {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-area: head;
+    border-bottom: 1px solid black;
+}
+
+.players {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    grid-area: players;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "player1 player2";
+}
+
+.player.one {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 40px;
+    grid-area: player1;
+    border: none;
+    border-right: 1px solid black;
+}
+
+.player.two {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: none;
+    font-size: 40px;
+    grid-area: player2;
+    border: none;
+}
+
+.stattext {
+    text-decoration: none;
+}

@@ -1,0 +1,54 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+canvas {
+    padding: 0;
+    margin: auto;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    fill: aqua;
+}
+
+.button1 {
+    background-color: steelblue; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 300px;
+    left: 475px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: steelblue; /* Green */
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    top: 300px;
+    left: 675px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+header{ 
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("fenway.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}

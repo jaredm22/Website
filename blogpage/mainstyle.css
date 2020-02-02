@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+
+body {
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    font-family: 'Yantramanav, sans serif';
+}
+
+.cover {
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0, 0.5);
+}
+
+.page {
+    position: absolute;
+    height:400%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "main"
+    "schilling"
+    "trout"
+    "kershaw";
+    vertical-align: middle;
+}
+
+.content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.content h1 {color: white;}
+.content h6 {color: white;}
+
+.content.main {grid-area: main;}
+.content.schilling {grid-area: schilling;}
+.content.trout {grid-area: trout;}
+.content.kershaw {grid-area: kershaw;}
+
+.text.main {
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    left: 40%;
+    top: 20%;
+}
+
+.text.main h1 {
+    position: absolute;
+    z-index: 2;
+}
+
+.text.schilling {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    right: 0%;
+    bottom: 30%;
+}
+
+.text.schilling h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.text.schilling a {
+    position: absolute;
+    z-index: 2;
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.text.schilling a:hover {
+    border-color: steelblue;
+}
+
+
+
+.text.trout {
+    position: absolute;
+    width: 30%;
+    text-align: center;
+    right: 5%;
+    bottom: 30%;;
+}
+
+.text.trout h1 {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.text.trout a {
+    position: absolute;
+    z-index: 2;
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.text.trout a:hover {
+    border-color: steelblue;
+}
+
+
+
+
+.text.kershaw {
+    position: absolute;
+    width: 50%;
+    text-align: center;
+    right: 5%;
+    bottom: 20%;
+}
+

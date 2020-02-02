@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    background: white;
+    color: white;
+    border-bottom: 1px solid black;
+    z-index: 1;
+}
+
+.container .main-nav {
+    float: right;
+    list-style: none;
+    vertical-align: center;
+    padding-right: 50px;
+}
+
+.container .main-nav li {
+    display: inline-block;
+}
+
+.container .main-nav li a {
+    color: black;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 15px;
+    font-weight: 100%;
+}
+
+.container .main-nav li a:hover {
+    color: cadetblue;
+}
+
+.intro {
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow: hidden;
+    display: table;
+    top: 0;
+    background-size: cover;
+}
+
+.intro .content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.resume {
+    position: relative; 
+    top: 0;
+}

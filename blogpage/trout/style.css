@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: whitesmoke;
+    height: 300%;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    border: 1px solid black;
+    background: rgba(0,0,0,0.90);
+    z-index: 1;
+}
+
+.main {
+    top: 20%;
+    left: 25%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.article {
+    display: grid;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    grid-template-rows: 10% 20% 60% 10%;
+    grid-template-areas: 
+    "title"
+    "image"
+    "body"
+    "footer";
+
+}
+
+.title {
+    grid-area: title;
+    position: absolute;
+    text-align: center;
+}
+
+.image.top {
+    grid-area: image;
+    position: absolute;
+    top: 10%;
+}
+
+.body {
+    grid-area: body;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
